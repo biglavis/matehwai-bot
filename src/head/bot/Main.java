@@ -27,8 +27,7 @@ public class Main {
     public static void main(String[] args) throws LoginException {
         JDA jda = JDABuilder.createDefault("ODMxNzI5NDI3NDUxODcxMjQz.YHZeZA.YPFb0lP83mgSLooZJMHjIFFgwPM").build();
         jda.getPresence().setStatus(OnlineStatus.ONLINE);
-//        jda.getPresence().setActivity(Activity.watching("Hentai"));
-        jda.getPresence().setActivity(Activity.playing("With It's Cock"));
+        jda.getPresence().setActivity(Activity.playing("With fire"));
         jda.addEventListener(new Commands());
         jda.addEventListener(new UserCommands());
         jda.addEventListener(new CoinFlipGuess());
