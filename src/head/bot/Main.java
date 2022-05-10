@@ -25,7 +25,7 @@ public class Main {
     public static String prefix = "%";
 
     public static void main(String[] args) throws LoginException {
-        JDA jda = JDABuilder.createDefault("ODMxNzI5NDI3NDUxODcxMjQz.YHZeZA.YPFb0lP83mgSLooZJMHjIFFgwPM").build();
+        JDA jda = JDABuilder.createDefault("x").build(); //replace x with bot token 
         jda.getPresence().setStatus(OnlineStatus.ONLINE);
         jda.getPresence().setActivity(Activity.playing("With fire"));
         jda.addEventListener(new Commands());
